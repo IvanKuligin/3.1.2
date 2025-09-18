@@ -15,9 +15,9 @@
     <label for="username">Имя пользователя:</label>
     <input type="text" id="username" th:field="*{username}" required />
 
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" th:field="*{password}" th:if="${user.id == null}" required />
-    <input type="hidden" th:field="*{password}" th:if="${user.id != null}" />
+    <label for="password">Пароль :</label>
+    <input type="password" id="password" th:field="*{password}" />
+
 
     <label for="firstName">Имя:</label>
     <input type="text" id="firstName" th:field="*{firstName}" />
